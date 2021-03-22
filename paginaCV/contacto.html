@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8"/>
+	<title>Contacto</title>
+	<style>
+	body{
+			color: #A15E89;
+			font-family: Times New Romas;
+			size: 3;
+		}
+	a{
+			text-decoration:none;
+			color:#A15E89;
+			font-size:14pt;
+		}
+    a:hover{
+			color:#FF95CA;
+			font-size:20pt;
+			text-decoration: underline;
+		}
+	</style>
+</head>
+<body>  
+
+	 <h2> <img src="imagenes/contacto.png" width="50" height="50" title="Icono de Contacto">  Contáctame</h2>
+
+	 <hr>
+
+
+<p>¿Tienes alguna Pregunta?, ¿Quieres saber más informacíon sobre mi trabajo? o ¿Te gustaría trabajar conmigo?...</p>
+
+<h4>!Escríbeme!</h4>
+<h4>Deja tus datos aquí</h4>
+
+
+<form method="post" action="#">
+	<table border="0">
+	<tr>
+		<td>Nombres:</td>
+		<td> <input type="text" name="nombre" size="25"> </td>
+	</tr>
+
+	<tr>
+		<td>Apellidos:</td>
+		<td><input type="text" name="apellidos" size="25"> </td>
+	</tr>
+
+	<tr>
+		<td>
+		País</td>
+		<td><select name="sectores">
+			<option value="0">Selecciona una Opción</option>
+	        <option value="espana">España</option>
+	        <option value="venezuela">Venezuela</option> 
+	        <option value="mexico">México</option>
+	        <option value="estadosunidos">EEUU</option>
+	        <option value="otros">Otro</option></td>
+	</tr>
+
+   <tr>
+   <td valign = "top">Mensaje: </td><br>
+    <td><textarea name="Observaciones" cols ="30" rows="10" style="resize:none">
+      Escribe aquí tu mensaje...
+   	 </textarea></tr>
+
+     <tr>
+   	 <td><input type="reset" value ="Borrar los datos"></td>
+     <td><input type="submit" value ="Enviar datos"></td>
+     </tr>
+	</table>
+	</form>
+
+	<br>
+	<br>
+
+<a href="derechaCV.html">Volver a Inicio</a>
+	
+</body>
+</html>

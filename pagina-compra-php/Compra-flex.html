@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<title>Tienda de Ropa flexb</title>
+<meta charset="utf-8">
+<link rel="shortcut icon" type="imagen/png" href="imagenes/logo.png" />
+<link rel="stylesheet" href="estilos-flex.css">
+
+</head>
+
+<body>
+	<header class="header">
+		<a href="#"><img class="logo" src="imagenes/logo.png"  alt="logo"></a>
+
+		<div class="perfil">
+			<a href="#"><img class ="separation" src="imagenes/cesta.png" alt="Cesta de compra" title="Cesta de compra"></a>
+			<a href="#"><img class ="separation2" src="imagenes/usuario.png" alt="Perfil" title="Perfil"></a>
+		</div>
+	</header>
+	
+	<h1>Tendencias Otoño 2020</h1> 
+
+	<form method="get" action="carrito.php">
+		<div class="maincont">
+
+			<div class="cont1">
+
+				<img class="foto" src="imagenes/jersey.jpg" title="jersey" alt="jersey">
+				<br>
+				<br>
+				<p>Jersey de cuello alto. 12€</p>
+				Cantidad:<input type="number" name="cantidadjer" class="cantidad">
+				<br>
+				<br>
+				<input type="hidden" name="preciojer" value="12">
+				<br>
+				<br>
+
+			</div>
+
+			<div>
+				<img  class="foto" src="imagenes/pants.jpg" title="pantalones" alt="pantalones" >
+				<br>
+				<br>
+				<p>Pantalones de pierna ancha. 22€</p>
+				Cantidad:<input type="number" name="cantidadpan" class="cantidad">
+				<br>
+				<br>
+				<input type="hidden" name="preciopan" value="22">
+			</div>
+
+			<div class="cont3">
+				<img  class="foto" src="imagenes/ropa.jpg" title="abrigo" alt="abrigo" >
+				<br>
+				<br>
+				<p>Abrigo con cremallera. 49€</p>
+				Cantidad:<input type="number" name="cantidadabr" class="cantidad">
+				<br>
+				<br>
+				<input type="hidden" name="precioabr" value="49">
+			</div>
+		</div>
+
+		<br>
+		<br>
+		<div class="comprarb">
+		<button type="submit" name="comprar" value="comprar" class="button button2">Comprar</button>
+		</div>
+	</form> 
+    
+	<footer class="contfooter">
+		<div class="padd">
+			<a href="#"><img class ="separation" src="imagenes/instagram.png" width="35px" alt="logo de instagram" title="instagram"></a>
+			<a href="#"><img class ="separation" src="imagenes/facebook.png" width="35px" alt="logo de instagram" title="facebook"></a>
+			<a href="#"><img class ="separation" src="imagenes/twitter.png" width="35px" alt="logo de instagram" title="twitter"></a>
+			<br>
+			<br>
+			<p> &copy; Todos los derechos reservados</p>
+		</div>
+	</footer>
+</body>
+</html>

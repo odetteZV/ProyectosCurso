@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="imgArray.css">
+
+</head>
+
+
+<body>
+
+    <cite class="tittle">"Aunque supiera que mañana se acaba el mundo, hoy mismo plantaría un árbol." Martin Luther
+        King.</cite>
+
+
+    <script>
+
+        var imagArr = new Array(5);
+        imagArr[0] = "imagenes/uno.jpg";
+        imagArr[1] = "imagenes/dos.jpg";
+        imagArr[2] = "imagenes/tres.jpg";
+        imagArr[3] = "imagenes/cuatro.jpg";
+        imagArr[4] = "imagenes/cinco.jpg";
+
+
+        var contador = 1
+
+        function aumentar() {
+
+            if (contador < imagArr.length - 1) {
+                document.images[1].src = imagArr[contador]
+                contador++
+                console.log(contador)
+            }
+        }
+
+        function disminuir() {
+
+            if (contador > 0) {
+                document.images[1].src = imagArr[contador]
+                contador--
+                console.log(contador)
+            }
+        }
+
+
+
+    </script>
+
+
+    <img class="left" onclick="disminuir()" src="Imagenes/izquierda.png" alt="flecha" width="40">
+
+    <img class="main-image" src="imagenes/uno.jpg" alt="imagen">
+
+    <img class="right" onclick="aumentar()" src="Imagenes/derecha.png" alt="flecha" width="40">
+
+
+</body>
+
+</html>

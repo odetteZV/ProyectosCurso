@@ -1,0 +1,204 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #fdc500;
+}
+
+.main-container {
+  background: linear-gradient(
+    122deg,
+    rgba(0, 106, 195, 1) 0%,
+    rgba(12, 96, 193, 1) 100%
+  );
+  width: 650px;
+  height: 530px;
+  border-radius: 80px 80px 40px 40px;
+  position: relative;
+  top: 100px;
+  left: 250px;
+  box-shadow: 32px 38px 57px 26px #464646;
+}
+
+.main-circle {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  left: 18px;
+  top: 129px;
+}
+
+.circle {
+  position: absolute;
+  top: 16.6%;
+  left: 25%;
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  background-color: #6f7377;
+  background: linear-gradient(-45deg, #333, #999);
+
+  box-shadow: 3px 2px 0px -1px rgba(0, 0, 0, 0.1),
+    0px -1px 0px 0px rgba(0, 0, 0, 0.3),
+    inset 0px 0px 5px 2px rgba(0, 0, 0, 0.45),
+    6px 6px 5px -5px rgba(0, 0, 0, 0.15), 9px 9px 7px -3px rgba(0, 0, 0, 0.2),
+    11px 11px 8px -2px rgba(0, 0, 0, 0.15);
+}
+
+.circle:before {
+  content: "";
+  display: block;
+  width: 82%;
+  height: 82%;
+  cursor: pointer;
+  position: absolute;
+  left: 8%;
+  top: 8%;
+  border-radius: 100%;
+  background-color: rgba(32, 35, 201, 0.2);
+  box-shadow: inset 0px 0px 0px 3px rgba(0, 0, 0, 0.2),
+    inset -1px -1px 0px 0px rgba(255, 255, 255, 0.4);
+}
+
+.middle {
+  display: flex;
+  justify-content: space-around;
+}
+
+.main-screen {
+  width: 340px;
+  height: 200px;
+  position: absolute;
+  z-index: 2;
+  left: 150px;
+  margin-top: 40px;
+  border: 10px solid #1f7add;
+  border-radius: 10px;
+}
+
+.second-screen {
+  width: 250px;
+  height: 200px;
+  background-color: rgb(85, 83, 83);
+  position: absolute;
+  top: 272px;
+  left: 200px;
+  border: 5px solid #1f7add;
+  border-radius: 5px;
+}
+
+.cam {
+  width: 19px;
+  height: 18px;
+  border-radius: 50%;
+  border-style: solid;
+  background-color: black;
+  position: absolute;
+  left: 313px;
+  margin-top: 8px;
+}
+
+.cam-center {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #53545c;
+  position: absolute;
+  left: 5px;
+  top: 4px;
+}
+
+.buttons {
+  position: absolute;
+  right: 12px;
+  top: 161px;
+  width: 125px;
+  height: 136px;
+}
+
+.button {
+  position: absolute;
+  font-size: 15px;
+  color: #0c60c1;
+  text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.35),
+    0px -1px 3px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  text-align: center;
+  line-height: 35px;
+  width: 31px;
+  height: 34px;
+  border-radius: 100%;
+  background-color: #014d99;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25),
+    2px 2px 3px 0px rgba(0, 0, 0, 0.3),
+    inset 1px 2px 1px 0px rgba(255, 255, 255, 0.45),
+    inset -1px -2px 2px 0px rgba(0, 0, 0, 0.3);
+}
+
+.button.up {
+  top: 13px;
+  left: 44px;
+}
+
+.button.down {
+  top: 95px;
+  left: 44px;
+}
+.button.left {
+  top: 54px;
+  right: 87px;
+}
+
+.button.right {
+  top: 54px;
+  right: 12px;
+}
+
+.button-onoff {
+  border-radius: 50% solid black;
+  position: absolute;
+  top: 464px;
+  right: 100px;
+  cursor: pointer;
+}
+
+.red-light {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: red;
+  position: absolute;
+  bottom: 70px;
+  right: 85px;
+}
+
+.green-light {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: greenyellow;
+  position: absolute;
+  bottom: 50px;
+  right: 85px;
+}
+
+.square {
+  background-color: #014d99;
+  position: relative;
+  cursor: pointer;
+}
+
+.square.vertical {
+  width: 30px;
+  height: 80px;
+  top: 309px;
+}
+
+.square.horizontal {
+  width: 80px;
+  height: 30px;
+  top: 254px;
+  left: -24px;
+}
